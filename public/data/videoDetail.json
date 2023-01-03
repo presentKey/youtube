@@ -1,0 +1,118 @@
+{
+  "kind": "youtube#videoListResponse",
+  "etag": "PxHMzeRw4S2BJSfIf-8B_WP4KEQ",
+  "items": [
+    {
+      "kind": "youtube#video",
+      "etag": "U70WPMWvAT7sMBmC0q_POqoW9ig",
+      "id": "SszP3hlQ55Y",
+      "snippet": {
+        "publishedAt": "2022-12-30T05:00:02Z",
+        "channelId": "UCQdq-lqPEq_yZ_wP_kuVB9Q",
+        "title": "ATEEZ(에이티즈) - 'HALAZIA' Official MV",
+        "description": "[SPIN OFF : FROM THE WITNESS]\nRelease Date: 2022. 12. 30\n \niTunes ▶ https://apple.co/3G56yY5\nSpotify ▶ https://spoti.fi/3Cb4xZf\nMelon ▶ http://kko.to/CbEONu6G8v\ngenie ▶ http://genie.co.kr/REOG18\nVIBE ▶ http://naver.me/Ix71XCiH\n\n▶ ATEEZ Official Homepage:\nhttp://ateez.kqent.com\n▶ ATEEZ Official Facebook:\nhttps://facebook.com/ATEEZofficial\n▶ ATEEZ Official Twitter:\nhttps://twitter.com/ATEEZofficial\n▶ ATEEZ Official Instagram:\nhttps://instagram.com/ATEEZ_official_\n▶ ATEEZ Official Fancafe:\nhttp://cafe.daum.net/ATEEZ\n\n▶ KQ Official Homepage: \nhttp://kqent.com\n▶ KQ Official Facebook: \nhttps://facebook.com/kqent\n▶ KQ Official Twitter: \nhttps://twitter.com/kqent\n▶ KQ Official Instagram:\nhttps://instagram.com/kqent\n\n#ATEEZ #에이티즈 #FROM_THE_WITNESS",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/SszP3hlQ55Y/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/SszP3hlQ55Y/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/SszP3hlQ55Y/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/SszP3hlQ55Y/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/SszP3hlQ55Y/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "KQ ENTERTAINMENT",
+        "tags": [
+          "KQ",
+          "케이큐",
+          "에이티즈",
+          "ATEEZ",
+          "HONGJOONG",
+          "SEONGHWA",
+          "YUNHO",
+          "YEOSANG",
+          "SAN",
+          "MINGI",
+          "WOOYOUNG",
+          "JONGHO",
+          "홍중",
+          "성화",
+          "윤호",
+          "여상",
+          "민기",
+          "우영",
+          "종호",
+          "에이티즈 영상",
+          "에이티즈 세계관",
+          "에이티즈 티저",
+          "ATEEZ 티저",
+          "KPOP Music video",
+          "ATEEZ MV",
+          "ATEEZ TEASER",
+          "KQ엔터테인먼트",
+          "KQ Entertainment",
+          "에이티즈 더월드 시리즈 뮤비",
+          "에이티즈 뮤비",
+          "에이티즈 뮤직비디오",
+          "에이티즈 할라티즈",
+          "ATEEZ HALATEEZ",
+          "HALAZIA",
+          "할라지아",
+          "ATEEZ 스핀오프",
+          "에이티즈 스핀오프",
+          "ATEEZ SPINOFF",
+          "에이티즈 할라지아 티저",
+          "에이티즈 할라지아",
+          "에이티즈 뮤비 티저",
+          "에이티즈 스핀오프 티저",
+          "할라지아 뮤비",
+          "할라지아 뮤직비디오",
+          "에이티즈 할라지아 뮤직비디오"
+        ],
+        "categoryId": "10",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "ATEEZ(에이티즈) - 'HALAZIA' Official MV",
+          "description": "[SPIN OFF : FROM THE WITNESS]\nRelease Date: 2022. 12. 30\n \niTunes ▶ https://apple.co/3G56yY5\nSpotify ▶ https://spoti.fi/3Cb4xZf\nMelon ▶ http://kko.to/CbEONu6G8v\ngenie ▶ http://genie.co.kr/REOG18\nVIBE ▶ http://naver.me/Ix71XCiH\n\n▶ ATEEZ Official Homepage:\nhttp://ateez.kqent.com\n▶ ATEEZ Official Facebook:\nhttps://facebook.com/ATEEZofficial\n▶ ATEEZ Official Twitter:\nhttps://twitter.com/ATEEZofficial\n▶ ATEEZ Official Instagram:\nhttps://instagram.com/ATEEZ_official_\n▶ ATEEZ Official Fancafe:\nhttp://cafe.daum.net/ATEEZ\n\n▶ KQ Official Homepage: \nhttp://kqent.com\n▶ KQ Official Facebook: \nhttps://facebook.com/kqent\n▶ KQ Official Twitter: \nhttps://twitter.com/kqent\n▶ KQ Official Instagram:\nhttps://instagram.com/kqent\n\n#ATEEZ #에이티즈 #FROM_THE_WITNESS"
+        },
+        "defaultAudioLanguage": "ko"
+      },
+      "contentDetails": {
+        "duration": "PT4M25S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "true",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "25201470",
+        "likeCount": "475959",
+        "favoriteCount": "0",
+        "commentCount": "69891"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 1
+  }
+}
