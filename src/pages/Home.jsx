@@ -6,10 +6,13 @@ export default function Home() {
     isLoading,
     error,
     data: videos,
-  } = useQuery(['popularVideos'], async () => {
-    console.log('fetching...');
-    return fetch('data/popularVideo.json').then((res) => res.json());
-  });
+  } = useQuery(
+    ['popularVideos'],
+    async () => {
+      return fetch('data/popularVideo.json').then((res) => res.json());
+    },
+    { staleTime: 1000 * 60 * 5 }
+  );
 
   if (isLoading) return <p>Loading...</p>;
   if (error) return <p>{error}</p>;
