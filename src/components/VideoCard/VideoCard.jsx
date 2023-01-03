@@ -1,9 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function VideoCard({ video }) {
   const time = timeForToday(video.snippet.publishedAt);
+  const navigate = useNavigate();
+  const handleClick = () => navigate(`/videos/watch/${video.id}`);
   return (
-    <div>
+    <div onClick={handleClick}>
       <img
         src={video.snippet.thumbnails.default.url}
         alt={video.snippet.title}
