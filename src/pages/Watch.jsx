@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import Youtube from 'react-youtube';
+import Channel from '../components/Channel/Channel';
 
 export default function Watch() {
   const { id } = useParams();
@@ -12,7 +13,6 @@ export default function Watch() {
   } = useQuery(
     ['videoDetail'],
     async () => {
-      console.log(1);
       return fetch('/data/videoDetail.json').then((res) => res.json());
     },
     { staleTime: 1000 * 60 * 5 }
@@ -38,6 +38,11 @@ export default function Watch() {
           e.target.stopVideo(0);
         }}
       />
+      <p>{detail.items[0].snippet.title}</p>
+      <Channel />
+      <article>
+        <span>조회수 {detail.items[0].statistics.viewCount}</span>
+      </article>
     </div>
   );
 }
