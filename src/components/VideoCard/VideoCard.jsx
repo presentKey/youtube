@@ -18,7 +18,7 @@ export default function VideoCard({ video }) {
   );
 }
 
-function timeForToday(value) {
+export function timeForToday(value) {
   const today = new Date();
   const timeValue = new Date(value);
 
