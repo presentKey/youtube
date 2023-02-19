@@ -1,29 +1,17 @@
 import { render, screen } from '@testing-library/react';
-import { MemoryRouter } from 'react-router-dom';
+import userEvent from '@testing-library/user-event';
+import { Route, useLocation } from 'react-router-dom';
+import { withRouter } from '../../tests/utils';
+import { fakeVideo as video } from '../../tests/videos';
 import { formatAgo } from '../../util/date';
 import VideoCard from '../VideoCard';
 
 describe('VideoCard', () => {
-  const video = {
-    id: 1,
-    snippet: {
-      title: 'title',
-      channelId: '1',
-      channelTitle: 'channelTitle',
-      publishedAt: new Date(),
-      thumbnails: {
-        medium: {
-          url: 'http://image/',
-        },
-      },
-    },
-  };
   const { title, channelTitle, publishedAt, thumbnails } = video.snippet;
+
   it('renders video item', () => {
     render(
-      <MemoryRouter>
-        <VideoCard video={video} />
-      </MemoryRouter>
+      withRouter(<Route path="/" element={<VideoCard video={video} />} />)
     );
 
     const image = screen.getByRole('img');
@@ -32,5 +20,27 @@ describe('VideoCard', () => {
     expect(screen.getByText(title)).toBeInTheDocument();
     expect(screen.getByText(channelTitle)).toBeInTheDocument();
     expect(screen.getByText(formatAgo(publishedAt, 'ko'))).toBeInTheDocument();
+  });
+
+  it('navigates to detailed video page with video state when clicked', async () => {
+    function LocationStateDisplay() {
+      return <pre>{JSON.stringify(useLocation().state)}</pre>;
+    }
+    render(
+      withRouter(
+        <>
+          <Route path="/" element={<VideoCard video={video} />} />
+          <Route
+            path={`/videos/watch/${video.id}`}
+            element={<LocationStateDisplay />}
+          />
+        </>
+      )
+    );
+
+    const card = screen.getByRole('listitem');
+    await userEvent.click(card);
+
+    expect(screen.getByText(JSON.stringify({ video }))).toBeInTheDocument();
   });
 });
