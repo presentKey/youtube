@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import renderer from 'react-test-renderer';
 import { Route, useLocation } from 'react-router-dom';
 import { withRouter } from '../../tests/utils';
 import { fakeVideo as video } from '../../tests/videos';
@@ -20,6 +21,24 @@ describe('VideoCard', () => {
     expect(screen.getByText(title)).toBeInTheDocument();
     expect(screen.getByText(channelTitle)).toBeInTheDocument();
     expect(screen.getByText(formatAgo(publishedAt, 'ko'))).toBeInTheDocument();
+  });
+
+  it('renders grid type correctly', () => {
+    const component = renderer.create(
+      withRouter(<Route path="/" element={<VideoCard video={video} />} />)
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
+  it('renders list type correctly', () => {
+    const component = renderer.create(
+      withRouter(
+        <Route path="/" element={<VideoCard video={video} type="list" />} />
+      )
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   it('navigates to detailed video page with video state when clicked', async () => {
